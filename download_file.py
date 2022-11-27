@@ -118,7 +118,7 @@ def time_name(m3u8_file):
 
 if __name__ == '__main__':
     url_m3u8_queue, ts_url_queue, failed_url_queue = [], [], []
-    with open("m3u8.txt", 'r') as f:
+    with open("files/m3u8.txt", 'r') as f:
         for line in f.readlines():
             url_m3u8_queue.append(line.strip("\n"))
     start_time = time.time()
